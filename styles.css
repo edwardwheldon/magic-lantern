@@ -1,0 +1,103 @@
+body {
+	background: black;
+	background-image: url("images/background-tile.gif");
+	background-repeat: repeat;
+}
+
+@keyframes glow {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: orange;}
+    85%  {background-color: yellow;}
+    100% {background-color: red;}
+}
+
+@keyframes think {
+    0%   {background-color: white;}
+    50%  {background-color: black;}
+    100% {background-color: white;}
+}
+
+
+
+h1 {
+	color: white;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 60px;
+	text-align: center;
+	text-shadow: 0px 0px 30px white;
+	margin-bottom: 60px;
+}
+
+.button {
+	width:160px;
+	height:40px;
+	font-weight: bold;
+	font-size: 16px;
+	color: white;
+	background-color: green;
+	border-radius: 12px;
+	cursor: pointer;
+}
+
+.input {
+	margin:20px;
+	width:300px;
+	height:40px;
+	padding:5px;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.question-text {
+	font-size: 24px;
+	font-weight: bold;
+	color: white;
+}
+
+.answer-text {
+	font-size: 42px;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+	color:yellow;
+}
+
+.pumpkinContainer {
+	background-color: transparent;
+	min-height:270px;
+	width:300px;
+	margin:0px auto;
+	margin-bottom: 30px;
+}
+
+.pumpkin {
+	position: absolute;
+	z-index: 2;
+}
+
+.flame {
+	position: absolute;
+	z-index: 1;
+	margin-top:60px;
+	margin-left:40px;
+    width: 240px;
+    height: 180px;
+    border-radius: 100%;
+    animation-name: glow;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    box-shadow: 0px 0px 60px white;
+}
+
+.thinking {
+
+}
+
+.question-container {
+	width: 100%;
+	min-height: 40px;
+	background-color: transparent;
+	margin: 0px auto;
+	text-align: center;
+}
