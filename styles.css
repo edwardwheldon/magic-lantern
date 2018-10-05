@@ -1,4 +1,4 @@
-body {
+body { 
 
 }
 
@@ -80,6 +80,8 @@ h1 {
     height: 180px;
     border-radius: 100%;
     box-shadow: 0px 0px 60px white;
+    /*--add animation here to make lantern flash --*/
+ 
 }
 
 .question-container {
@@ -88,4 +90,49 @@ h1 {
 	background-color: transparent;
 	margin: 0px auto;
 	text-align: center;
+}
+
+
+
+
+
+/*-- footer content --*/
+.footer {
+	position:absolute;
+	width:420px;
+	height:539px;
+	background-image: url("images/assets/witch.png");
+	bottom:0px;
+	z-index: -10;
+	animation-name: appear;
+	animation-duration: 20s;
+	animation-delay: 0s;
+  	animation-iteration-count: infinite;
+  	animation-direction: alternate;
+  	overflow: hidden;
+  	opacity: 0;
+    filter: alpha(opacity=0); /* For IE8 and earlier */
+
+}
+
+@keyframes appear {
+0% {
+	left:-20%;
+	opacity:0;
+}
+40% {
+	left:5%;
+	opacity:1;
+}
+60% {
+	left:5%;
+	opacity:1;
+}
+80% {
+	left:-20%;
+	opacity:0;
+}
+100% {
+	left:-20%;
+	opacity:0;
 }
