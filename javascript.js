@@ -8,7 +8,6 @@ let answers = [
 
 function answerMe() {
 	let response = answers[Math.floor(Math.random() * answers.length)];
-	document.getElementById('footer').classList.add('footer');
 	let question = document.getElementById("input").value;
 	document.getElementById("flame").style.animation = "think 0.5s infinite";
 	
